@@ -1,0 +1,30 @@
+# Application properties that need to be
+# embedded within the web application can be included here
+cas:
+  server:
+    name: https://localhost:8443
+    prefix: ${cas.server.name}/cas
+  authn:
+    accept:
+      users: casuser::Mellon
+  logout:
+    follow-service-redirects: true
+    redirect-parameter: service
+  # when server starts, command prompt shows newly generated keys to replace empty key values
+  tgc:
+    crypto:
+      signing:
+        key:
+      encryption:
+        key:
+  webflow:
+    crypto:
+      signing:
+        key:
+      encryption:
+        key:
+
+server:
+  ssl:
+    key-store: file:/etc/cas/thekeystore
+    key-store-password: changeit
