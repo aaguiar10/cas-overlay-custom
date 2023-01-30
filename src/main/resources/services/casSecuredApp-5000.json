@@ -5,4 +5,9 @@
     "logoutType" : "BACK_CHANNEL",
     "logoutUrl" : "http://localhost:5000/logout.*",
     "id" : 5000,
+    "description" : "Add service description",
+    "evaluationOrder" : 1,
+    "attributeReleasePolicy" : {
+      "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"
+    }
 }

@@ -10,7 +10,7 @@ cas:
   logout:
     follow-service-redirects: true
     redirect-parameter: service
-  # when server starts, command prompt shows newly generated keys to replace empty key values
+  # when server starts, output shows newly generated keys to replace empty key values
   tgc:
     crypto:
       signing:
